@@ -1,13 +1,24 @@
-# Project Brief - Sunglasses E-commerce Site
+# Project Brief: Sunglasses Ecommerce (cPanel Native)
 
 ## Project Overview
-A simple, premium e-commerce platform for selling sunglasses. The application will be built using React and focus on a clean, modern user interface.
+A premium sunglasses e-commerce website built to be 100% compatible with standard cPanel shared hosting (LAMP stack). This is a migration/rebuild of the previous "choshmazone_ag" project, moving from a Supabase-centric architecture to a PHP/MySQL backend while retaining the high-end React frontend experience.
 
-## Core Goals
-- Showcase a collection of sunglasses.
-- Provide a smooth product browsing experience.
-- Implement a basic shopping cart functionality.
-- Ensure the design feels "premium" and "state-of-the-art" (as per Antigravity standards).
+## Core Objectives
+1. **cPanel Compatibility**: Ensure the entire application (frontend, backend, database) runs natively on cPanel without requiring specialized Node.js hosting or external cloud services like Supabase.
+2. **Premium UX**: Maintain the boutique, high-end aesthetic and smooth SPA (Single Page Application) feel using React and Tailwind CSS v4.
+3. **Local Sovereignty**: All data and assets should be stored on the user's own server.
+4. **Performance**: Optimize for fast loading times on standard shared hosting environments.
 
-## Target Audience
-Fashion-conscious individuals looking for stylish eyewear.
+## Tech Stack (Recommended)
+- **Frontend**: React (Vite), Tailwind CSS v4 (Glassmorphism, smooth animations).
+- **Backend**: PHP 8.2+ (RESTful API).
+- **Database**: MySQL (Managed via phpMyAdmin).
+- **Authentication**: JWT (JSON Web Tokens) with PHP.
+- **Email**: SMTP (via cPanel Business Email).
+
+## Key Features
+- High-performance product catalog with advanced filtering.
+- Dynamic delivery charge system (Bangladesh-specific).
+- Secure checkout with bKash and COD.
+- Full-featured Admin Dashboard for inventory and order management.
+- Order tracking with OTP verification.
