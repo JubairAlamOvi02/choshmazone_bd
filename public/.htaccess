@@ -1,0 +1,15 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  
+  # Forward requests starting with /api to the PHP directory
+  # (If your api folder is inside public_html/api)
+  RewriteRule ^api/(.*)$ api/$1 [L]
+
+  # For any other request, check if it's a real file or directory
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  
+  # If not a file/dir, send all traffic to index.html (React Router)
+  RewriteRule . /index.html [L]
+</IfModule>
